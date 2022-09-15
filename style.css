@@ -6,10 +6,50 @@ a{
     text-decoration: none;
     color:white;
 }
+.navbar_fixed{
+    position: fixed;
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+}
+header{
+    padding: 55px 0 5px;
+    background-color: #87509c;
+    color: #ffffff;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all 0.4s ease;
+}
+.pdt-5{
+    padding-top: 3em;
+}
+a:hover{
+    color:#30bae7;
+}
+ul{
+    list-style: none;
+}
 body
  {
     margin: 0;   /* Remove body margins */
     font-family: 'Titillium Web', sans-serif;
+}
+footer{
+    background-color: #344b8e;
+}
+.nav-link:hover{
+    background-color: #643a79;
+}
+.nav-item{
+    padding: 0 10px 0 10px;
+}
+.no_padding{
+    padding: 0!important;
+}
+.no_margin{
+    margin: 0!important;
 }
 h1, h2{
     font-weight: bold;
@@ -20,6 +60,7 @@ h1, h2{
 .img_resp img{
     width: 100%;
 }
+
 .col-content_p{
     text-transform: uppercase;
     font-weight: 600;
@@ -36,29 +77,28 @@ h1, h2{
 }
 
 
-.a_first{
-    padding-top: 1.5em ;
+#b_page{
     background-color:#87509c;
 }
 
-.a_second{
+#services{
     background-color:#17c2a4;
 }
 .padding_section{
     padding: 6rem 0;
 }
-.a_second h1{
+#services h1{
     margin: 0;
 }
-.a_third{
+#team{
     background-color:#e7f1f8;
     color:#3c4761;
 }
-.a_four{
+#skills{
     background-color:#fff;
     color:#3c4761;
 }
-.a_five{
+#portfolio{
     background-color:#ffdd99;
     color:#393939;
 }
@@ -68,11 +108,11 @@ h2{
  padding-top: 2rem;
 }
 
-.a_second img{
+#services img{
     height: 124px;
 }
 .p_first{
-    padding: 9rem 0;
+    padding: 7rem 0 0 0;
 }
 .p_first h1{
     padding-bottom: 2rem;
@@ -81,17 +121,17 @@ h2{
     display: inline-flex;
     padding: 0.15rem 3rem;
 }
-.line_a_six{
+.line_about_us{
     background-color: #b73c6d;
 }
-.line_a_second{
+.line_services{
     background-color: #14a58c;
 }
-.line_a_third{
+.line_team{
     background-color: #c8d9e5;
  
 }
-.line_a_five{
+.line_portfolio{
     background-color: #e5c37f;
 }
 .btn_first{
@@ -100,6 +140,9 @@ h2{
 }
 .btn_first:hover{
     box-shadow: 0 4px #c86a40;
+}
+.first_padding{
+    padding: 2em 0 9em;
 }
 .gen_btn{
    
@@ -118,18 +161,15 @@ h2{
 .secont_h1_content{
     justify-content: center;
     display: flex;
-    padding-bottom: 4rem;
 }
 .p_text{
     margin:0;
     padding-top: 0.8rem;
 }
-.col-content{
-    padding: 0 2.9rem;
-}
+
 .ellips{
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     background-color: #878787;
     margin: 0 auto;
     border-radius: 50%;
@@ -182,14 +222,14 @@ i::before{
 .second_padd_top{
     padding-top: 58px;
 }
-.a_six{
+#about_us{
     background-color: #d74680;
 }
-.a_six_container{
+.about_us_container{
     display: inline-flex;
     padding-bottom: 7em;
 }
-.a_six_container_p{
+.about_us_container_p{
     font-size: 21px;
     font-style: italic;
     text-transform: none;
@@ -204,7 +244,7 @@ i::before{
 .six_count span{
     color:#ffdd99;
 }
-.a_seven{
+#contact{
     background-color: #3c5499;
 }
 .no_pb{
@@ -236,4 +276,36 @@ input, textarea{
 }
 .line_seven{
     background-color: #273a71;
+}
+.nav_footer_link{
+    font-size: 24px;
+}
+.nav_footer{
+    padding: 2em 2em;
+}
+.footer_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*media*/
+@media screen and (max-width: 980px) {
+    .six_count {
+        padding: 0.7em 0em 0 2em;
+    }
+    .padding_third_block{
+        padding-bottom: 30px;
+    }
+}
+@media screen and (min-width: 981px) {
+    .col-content {
+        padding: 0 55px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .p_first {
+        padding: 2em 2em 0 2em;
+    }
+    .col-content {
+        padding: 0 2em;
+    }
 }
